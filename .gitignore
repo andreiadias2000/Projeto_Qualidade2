@@ -1,0 +1,10 @@
+# Pastas de cache do Python
+__pycache__/
+
+# Pasta de resultados e evidências dos testes (vídeos, prints, etc.)
+testes_resultado/
+test-results/
+
+# Ambientes virtuais que podemos criar no futuro
+venv/
+.venv/
