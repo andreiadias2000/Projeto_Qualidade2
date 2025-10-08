@@ -19,22 +19,22 @@ O projeto conta com os seguintes cenários de teste automatizados:
 ### Testes de Sistema (contra o site `saucedemo.com`)
 
 1.  **Cenário de Login:**
-    * `test_login_com_sucesso`: Verifica o login com credenciais válidas.
-    * `test_login_com_senha_invalida`: Verifica a mensagem de erro para senhas incorretas.
-    * `test_login_com_usuario_bloqueado`: Verifica a mensagem de erro para usuários bloqueados.
-    * `test_login_com_usuario_nao_cadastrado`: Verifica a mensagem de erro para usuários inexistentes.
+    * `teste_login_com_sucesso`: Verifica o login com credenciais válidas.
+    * `teste_login_com_senha_invalida`: Verifica a mensagem de erro para senhas incorretas.
+    * `teste_login_com_usuario_bloqueado`: Verifica a mensagem de erro para usuários bloqueados.
+    * `teste_login_com_usuario_nao_cadastrado`: Verifica a mensagem de erro para usuários inexistentes.
 
 2.  **Cenário de Carrinho de Compras:**
-    * `test_1_adiciona_um_item`: Verifica se um item é adicionado ao carrinho com sucesso.
-    * `test_2_adiciona_e_remove_item`: Verifica a funcionalidade de adicionar e depois remover um item.
-    * `test_3_adiciona_varios_itens`: Verifica se o contador do carrinho funciona para múltiplos itens.
+    * `teste_1_adiciona_um_item`: Verifica se um item é adicionado ao carrinho com sucesso.
+    * `teste_2_adiciona_e_remove_item`: Verifica a funcionalidade de adicionar e depois remover um item.
+    * `teste_3_adiciona_varios_itens`: Verifica se o contador do carrinho funciona para múltiplos itens.
 
 ### Testes Unitários
 
 1.  **Cenário de Gerenciador de Tarefas:**
-    * `test_1_adicionar_tarefa_valida`: Testa a lógica de adicionar uma tarefa válida.
-    * `test_2_nao_adicionar_tarefa_vazia`: Testa a regra de negócio que impede tarefas vazias.
-    * `test_3_nao_adicionar_tarefa_com_tipo_errado`: Testa a regra que impede que dados inválidos sejam adicionados.
+    * `teste_1_adicionar_tarefa_valida`: Testa a lógica de adicionar uma tarefa válida.
+    * `teste_2_nao_adicionar_tarefa_vazia`: Testa a regra de negócio que impede tarefas vazias.
+    * `teste_3_nao_adicionar_tarefa_com_tipo_errado`: Testa a regra que impede que dados inválidos sejam adicionados.
 
 ---
 
