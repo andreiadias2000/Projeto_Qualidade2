@@ -1,6 +1,6 @@
 # Projeto de Testes Automatizados - Qualidade de Software
 
-Este projeto foi desenvolvido para a disciplina de Qualidade de Software, com o objetivo de demonstrar a aplicação de testes de sistema e testes unitários em uma aplicação web.
+Este projeto foi desenvolvido para a disciplina de Qualidade de Software, com o objetivo de demonstrar a aplicação de testes de sistema e testes unitários.
 
 ---
 
@@ -8,51 +8,40 @@ Este projeto foi desenvolvido para a disciplina de Qualidade de Software, com o 
 
 * **Linguagem:** Python
 * **Automação de UI (Testes de Sistema):** Playwright
-* **Framework de Teste:** Unittest (biblioteca padrão do Python)
+* **Framework de Teste:** Unittest
+* **Gerador de Relatórios:** HtmlTestRunner
 
 ---
 
 ## 🧪 Testes Implementados
 
-O projeto conta com os seguintes cenários de teste automatizados:
+O projeto conta com 10 casos de teste automatizados, divididos em 3 cenários:
 
 ### Testes de Sistema (contra o site `saucedemo.com`)
 
-1.  **Cenário de Login:**
-    * `teste_login_com_sucesso`: Verifica o login com credenciais válidas.
-    * `teste_login_com_senha_invalida`: Verifica a mensagem de erro para senhas incorretas.
-    * `teste_login_com_usuario_bloqueado`: Verifica a mensagem de erro para usuários bloqueados.
-    * `teste_login_com_usuario_nao_cadastrado`: Verifica a mensagem de erro para usuários inexistentes.
+1.  **Cenário de Login (`test_login_saucedemo.py`):**
+    * `test_login_com_sucesso`: Verifica o login com credenciais válidas.
+    * `test_login_com_senha_invalida`: Verifica a mensagem de erro para senhas incorretas.
+    * `test_login_com_usuario_bloqueado`: Verifica a mensagem de erro para usuários bloqueados.
+    * `test_login_com_usuario_nao_cadastrado`: Verifica a mensagem de erro para usuários inexistentes.
 
-2.  **Cenário de Carrinho de Compras:**
-    * `teste_1_adiciona_um_item`: Verifica se um item é adicionado ao carrinho com sucesso.
-    * `teste_2_adiciona_e_remove_item`: Verifica a funcionalidade de adicionar e depois remover um item.
-    * `teste_3_adiciona_varios_itens`: Verifica se o contador do carrinho funciona para múltiplos itens.
+2.  **Cenário de Carrinho de Compras (`test_carrinho_de_compras.py`):**
+    * `test_1_adiciona_um_item`: Verifica se um item é adicionado ao carrinho com sucesso.
+    * `test_2_adiciona_e_remove_item`: Verifica a funcionalidade de adicionar e depois remover um item.
+    * `test_3_adiciona_varios_itens`: Verifica se o contador do carrinho funciona para múltiplos itens.
 
-### Testes Unitários
+### Testes Unitários (`test_gerenciador_tarefas.py`)
 
 1.  **Cenário de Gerenciador de Tarefas:**
-    * `teste_1_adicionar_tarefa_valida`: Testa a lógica de adicionar uma tarefa válida.
-    * `teste_2_nao_adicionar_tarefa_vazia`: Testa a regra de negócio que impede tarefas vazias.
-    * `teste_3_nao_adicionar_tarefa_com_tipo_errado`: Testa a regra que impede que dados inválidos sejam adicionados.
+    * `test_1_adicionar_tarefa_valida`: Testa a lógica de adicionar uma tarefa válida.
+    * `test_2_nao_adicionar_tarefa_vazia`: Testa a regra de negócio que impede tarefas vazias.
+    * `test_3_nao_adicionar_tarefa_com_tipo_errado`: Testa a regra que impede que dados inválidos sejam adicionados.
 
 ---
 
-## 🚀 Como Rodar os Testes
+## 🚀 Como Rodar Todos os Testes e Gerar o Relatório
 
-Com o ambiente Python e as dependências do `requirements.txt` instaladas, execute os seguintes comandos a partir da pasta raiz do projeto:
-## 🚀 Como Rodar os Testes
+Com o ambiente Python e as dependências do `requirements.txt` instaladas, execute o seguinte comando a partir da pasta raiz do projeto:
 
-Com o ambiente Python e as dependências do `requirements.txt` instaladas, execute os seguintes comandos a partir da pasta raiz do projeto:
-
-### Para rodar os testes de login:
-python -m unittest testes/testes_de_sistema/test_login_saucedemo.py
-
-### para rodar os testes de carrinho:
-python -m unittest testes/testes_de_sistema/test_carrinho_de_compras.py
-
-### para rodar os testes unitarios:
-python -m unittest testes/testes_unitarios/test_gerenciador_tarefas.py
-
-
-
+```bash
+python rodar_todos_os_testes.py
